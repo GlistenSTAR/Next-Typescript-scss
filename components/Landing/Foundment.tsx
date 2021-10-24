@@ -22,20 +22,6 @@ function Foundment() {
       </div>
 
       <style jsx>{`
-        .foundment {
-          // margin-top: 20px
-        }
-        .foundment h1 {
-          color: #661A1B;
-          font-weight: bold;
-          letter-spacing: 2px
-        }
-        .foundment h6 {
-          color: rgb(197, 4, 10);
-          font-size: 14px; 
-          letter-spacing: 4px;
-          font-weight: bold
-        }
         .row{
           margin-top: 50px
         }

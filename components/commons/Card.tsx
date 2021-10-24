@@ -29,10 +29,6 @@ function Card({title, content}) {
                 transform-style: preserve-3d;
             }
         }
-        .card h1{
-          color: rgb(84, 102, 129);
-          font-size: 24px;
-        }
         .card p{
           max-width: 320px
         }
