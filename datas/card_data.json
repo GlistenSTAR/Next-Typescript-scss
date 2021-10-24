@@ -1,0 +1,16 @@
+{
+  "data" : [
+    {
+      "title": "Concurrency",
+      "content": "We optimise concurrency on the Cardano network. Our solution is proven using Amdahl's law. This means that our solution cannot be beaten, only matched. We use this architecture to minimise fee's and transaction sizes. All achieved in a completely decentralised manner."
+    },
+    {
+      "title": "Capital Efficiency",
+      "content": "The higher capital efficiency, the less money is required to perform the same task. We think of money as a source of energy and capital efficiency as engine performance. The higher the efficiency, the more energy is spent on valuable work and less wasted due to system inefficiency."  
+    },
+    {
+      "title": "No Impermanent Loss",
+      "content": "We achieve zero impermanent loss by leveraging data provision and the incentivisation of healthy pools, accurate liquidity curve modelling, and concentrating liquidity into a single spot within asset pair volatility, just like professional market makers in traditional finance."  
+    }
+  ]
+}
