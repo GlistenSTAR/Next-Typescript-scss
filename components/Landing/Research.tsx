@@ -62,11 +62,10 @@ const Research = () => {
             height: 100%;
           }
           .research .left_text{
-            padding-left: 50px;
             position: relative;
             margin-top: auto;
             margin-bottom: auto;
-            padding-left: 50px;
+            padding-left: 20px;
           }
           .research .left_text p{
           }

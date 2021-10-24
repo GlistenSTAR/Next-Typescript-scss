@@ -14,7 +14,6 @@ const Socials = () => {
       <div><Image src={algolia} width="130"/></div>
       <div><Image src={behance} width="130"/></div>
       <div><Image src={buffer} width="130"/></div>
-
       
       <style jsx>{`
         .socials{

@@ -1,20 +1,20 @@
 function Card({title, content}) {
   return (
-    <div className="card col-md-4">
-      <h2>{title}</h2>
-      <p>{content}</p>
-      <button className="mt-5 btn btn-danger">Learn More</button>
+    <div className="col-md-4">
+      <div className="card"> 
+        <h3>{title}</h3>
+        <p>{content}</p>
+        <button className="mt-5 btn btn-danger">Learn More</button>
+      </div>
       <style jsx>{`
         .card{
-          min-height: 350px;
           padding: 20px 25px;
           float: left;
-          max-width: 400px;
-          margin:0 15px;
           color: rgb(84, 102, 129);
           background-color: white;
           border: none;
           border-radius: 20px;
+          min-height: 400px;
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
             0deg
             ) rotateY(
