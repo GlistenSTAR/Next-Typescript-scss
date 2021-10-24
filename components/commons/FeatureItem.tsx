@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const FeatureItem = ({icon, title, content}) => {
   return (
-    <div className="feature_item">
+    <div className="feature_item col-md-4">
       <Image 
         src={ require(`../../assets/img/icons/${icon}.png`) }
         width="120"
@@ -24,7 +24,6 @@ const FeatureItem = ({icon, title, content}) => {
           display: flex;
           flex-direction: row;
           align-items: center;
-          width:33%;
           padding: 20px 15px;
           float:left
         }

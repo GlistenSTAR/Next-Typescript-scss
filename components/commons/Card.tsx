@@ -4,10 +4,11 @@ function Card({title, content}) {
       <div className="card"> 
         <h3>{title}</h3>
         <p>{content}</p>
-        <button className="mt-5 btn btn-danger">Learn More</button>
+        <button className="btn btn-danger">Learn More</button>
       </div>
       <style jsx>{`
         .card{
+          posistion: relative;
           padding: 20px 25px;
           float: left;
           color: rgb(84, 102, 129);
@@ -30,13 +31,34 @@ function Card({title, content}) {
             }
         }
         .card p{
-          max-width: 320px
+          max-width: 320px;
+          font-size: 17px;
+          padding-bottom: 20px
         }
         .card button{
+          position: absolute;
+          bottom: 20px;
           width: 180px;
           border-radius: 50px;
           padding: 14px 35px;
-          margin-right:10px
+        }
+        .card h3{
+          font-size: 24px
+        }
+
+        @media (max-width: 1200px) {
+          .card{
+            min-height: 450px
+          }
+          .card button{
+            position: absolute;
+            bottom: 20px;
+            width: 180px;
+            border-radius: 50px;
+            padding: 14px 35px;
+            margin-right:10px
+            min-height: auto
+          }
         }
       `}</style>
     </div>

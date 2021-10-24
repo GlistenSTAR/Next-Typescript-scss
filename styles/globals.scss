@@ -8,37 +8,63 @@ body {
   background-size: auto 100vh;
   background-color: #FBFBFC;
 }    
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .container{
   padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
 }
-
 .container_fluid{
   background: #FBFBFC;
 }
-
 h1{
   color: #661A1B;
   font-size: 55px;
   font-weight: bold;
   line-height: 1.1
 }
-
 h6{
   color: rgb(197, 4, 10);
   font-size: 14px; 
   letter-spacing: 4px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.button_group{
+  margin-left: 30px;
+  margin-top: 50px
+}
+.button_group .btn-danger{
+  border-radius: 50px;
+  padding: 14px 35px;
+  margin-right:10px
+}
+.button_group .btn-default:hover{
+  color: rgb(72, 77, 255)
+}
+
+
+@media (max-width: 1200px) {
+  .container{
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container{
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0;
+    width: 100%;
+    max-width: 990px;
+  }
 }

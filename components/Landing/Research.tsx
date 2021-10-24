@@ -82,19 +82,7 @@ const Research = () => {
           .research .right_image img{
             height: 450px;
           }
-          .button_group{
-            margin-left: 30px;
-            margin-top: 50px
-          }
-          .button_group .btn-danger{
-            border-radius: 50px;
-            padding: 14px 35px;
-            margin-right:10px
-          }
-          .button_group .btn-default:hover{
-            color: rgb(72, 77, 255)
-          }
-  
+            
           .tab_group{
             text-transform: uppercase;
             padding-top: 150px

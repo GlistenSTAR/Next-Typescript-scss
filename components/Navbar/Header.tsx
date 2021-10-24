@@ -56,6 +56,11 @@ const Header = () => {
           border-color: #83B4FF;
           background-color: #83B4FF;
         }
+        @media (max-width: 1024px) {
+          nav .container{
+            padding: auto 20px;
+          }
+        }
       `}</style>
     </>
   );
