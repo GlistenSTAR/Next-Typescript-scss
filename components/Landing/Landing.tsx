@@ -5,7 +5,7 @@ import Socials from './Socials'
 import Features from './Features'
 import Join from './Join'
 
-const Landing = () => {
+const Landing: React.FC = () => {
   return (
     <>
       <div className="container">

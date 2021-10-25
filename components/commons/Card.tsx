@@ -1,4 +1,9 @@
-function Card({title, content}) {
+type Props = {
+  title: string
+  content: string
+}
+
+const Card: React.FC<Props> = ({title, content}) => {
   return (
     <div className="col-md-4 col-sm-12 col-xs-12">
       <div className="card"> 
@@ -62,6 +67,10 @@ function Card({title, content}) {
             padding: 14px 35px;
             margin-right:0px;
             min-height: auto
+          }
+          .card:hover{
+            margin-top: 0px;
+            transition: ease-in-out .3s;
           }
         }
       `}</style>

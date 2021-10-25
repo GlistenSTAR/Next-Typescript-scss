@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import Logo from '../../Assets/img/logo.png'
 
-const Header = () => {
+const Header:React.FC = () => {
   return (
     <>
       <nav className="navbar navbar-inverse">

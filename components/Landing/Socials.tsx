@@ -6,7 +6,7 @@ import eventbrite from '../../assets/img/socials/eventbrite.svg'
 import algolia from '../../assets/img/socials/algolia.svg'
 import behance from '../../assets/img/socials/behance.svg'
 
-const Socials = () => {
+const Socials: React.FC = () => {
   return (
     <div className="container socials">
       <div><Image src={linkedin} width="130"/></div>

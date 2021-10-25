@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="container footer">
       <div className="footer_header">

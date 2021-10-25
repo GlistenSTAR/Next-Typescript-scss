@@ -10,7 +10,7 @@ const cards = card_data.data.map((item, key)=>(
   />
 ));
 
-function Foundment() {
+const Foundment: React.FC = () => {
   return (
     <div className="foundment">
       <div className="header">

@@ -48,6 +48,7 @@ const Join = () => {
             height={ width !=null || width > 768 ? width : '440'}  
           />
         </div>
+
         <style jsx>{`
           .join_us{
             display:flex;

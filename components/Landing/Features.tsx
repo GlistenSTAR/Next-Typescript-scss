@@ -1,6 +1,6 @@
 import FeatureItem from '../commons/FeatureItem'
 
-const Features = () => {
+const Features: React.FC = () => {
   return (
     <div className="container features mt-5">
       <div>
