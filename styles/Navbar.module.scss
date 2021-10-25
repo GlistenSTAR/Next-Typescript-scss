@@ -1,0 +1,39 @@
+.navbar{
+  .contianer{
+    margin-left:500px;
+    margin-right:500px;
+    @media (max-width: 1024px) {
+       padding: auto 20px;
+    }
+  }
+  &__nav{
+    flex-direction: row;
+  }
+  li{
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    a {
+      text-decoration: none;
+      color: black
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  button{
+    background-color: #DC3545;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-color: #DC3545;
+    @media (max-width: 768px) {
+      display: none
+    }
+  }
+  button:hover{
+    border-color: #83B4FF;
+    background-color: #83B4FF;
+  }
+}
