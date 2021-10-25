@@ -1,7 +1,13 @@
 
 import Image from 'next/image'
 
-const FeatureItem: React.FC = ({icon, title, content}) => {
+type Props = {
+  title: string
+  content: string
+  icon: string
+}
+
+const FeatureItem: React.FC<Props> = ({icon, title, content}) => {
   return (
     <div className="feature_item col-md-4 col-sm-6">
       <Image 
