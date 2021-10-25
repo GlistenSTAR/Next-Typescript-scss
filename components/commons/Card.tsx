@@ -16,19 +16,11 @@ function Card({title, content}) {
           border: none;
           border-radius: 20px;
           min-height: 400px;
-          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
-            0deg
-            ) rotateY(
-            0deg
-            ) rotateZ(
-            0deg
-            ) skew(
-            0deg
-            , 
-            0deg
-            );
-                transform-style: preserve-3d;
-            }
+          box-shadow: rgb(0 22 50 / 6%) 14px 14px 200px 0px;
+        }
+        .card:hover{
+          margin-top: -10px;
+          transition: ease-in-out .3s;
         }
         .card p{
           max-width: 320px;

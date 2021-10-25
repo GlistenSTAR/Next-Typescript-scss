@@ -33,17 +33,35 @@ const Research = () => {
         </div>
         <div className="tab_group">
           <div className="row text-center">
-            <div className="col-md-4">
-              <div className="empty_space">{showNumber===1?<div className="learn_more">Learn More</div>:null}</div>
-              <div className="tab_text" onMouseEnter={() => toogle(1)} onMouseLeave={()=>toogle(0)}>Core ideas</div>
+            <div className="col-md-4 overlay">
+              <div className="position-relative">
+                <div className="child-overlay position-absolute">
+                  <div className="text">
+                    Learn more
+                  </div>
+                </div>
+                <div className="tab_text">Core ideas</div>
+              </div>
             </div>
-            <div className="col-md-4">
-              <div className="empty_space">{showNumber===2?<div className="learn_more">Learn More</div>:null}</div>
-              <div className="tab_text" onMouseEnter={() => toogle(2)} onMouseLeave={()=>toogle(0)}>ROAD MAp</div>
+            <div className="col-md-4 overlay">
+              <div className="position-relative">
+                <div className="child-overlay position-absolute">
+                  <div className="text">
+                    Learn more
+                  </div>
+                </div>
+                <div className="tab_text">ROAD MAp</div>
+              </div>
             </div>
-            <div className="col-md-4">
-              <div className="empty_space">{showNumber===3?<div className="learn_more">Learn More</div>:null}</div>
-              <div className="tab_text" onMouseEnter={() => toogle(3)} onMouseLeave={()=>toogle(0)}>JOIN Us</div>
+            <div className="col-md-4 overlay">
+              <div className="position-relative">
+                <div className="child-overlay position-absolute">
+                  <div className="text">
+                    Learn more
+                  </div>
+                </div>
+                <div className="tab_text">JOIN Us</div>
+              </div>
             </div>
           </div>
         </div>
@@ -89,31 +107,49 @@ const Research = () => {
             padding-left: 0;
             padding-right: 0
           }
-          .tab_group .row .tab_text{
-            color: #626d86;
-            border-bottom : 1px solid #BBBBBB;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            margin-left:20px;
-            margin-right: 20px;
-            font-size:12px;
-            letter-spacing: 3px;
+          .overlay{
+            border-top: 1px solid #DC3545
           }
-          .tab_group .empty_space{
-            min-height: 28px;
+          .overlay .position-relative{
+            display:flex;
+            justify-content: center;
           }
-          .tab_group .learn_more{
-            width:100%;
+          .tab_text{
+            padding-top:7px;
+            padding-bottom:7px;
+            text-trasform: uppercase;
+            border-bottom: 1px solid rgba(136, 158, 168, 0.2);
+            width: 80%;
+          }
+          .child-overlay {
+            position: absolute;
+            bottom: 38px;
+            left: 0;
+            right: 0;
+            height: 0;
+            transition: .5s ease;
             background-color: #DC3545;
-            font-size: 12px;
+          }
+          .overlay:hover .child-overlay {
+            height: 100%;
+            transition: height ease-in-out .3s;
+          }
+          .overlay:hover .text{
+            display: block
+          }
+          .text {
+            display: none;
             color: white;
+            font-size: 12px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
             padding-top: 5px;
             padding-bottom: 5px;
-            opacity: 1;
-            transition: opacity 3s ease;
-          }
-          .learn_more:hover {
-            opacity:0;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
           }
 
           @media (max-width: 992px) {
@@ -140,6 +176,9 @@ const Research = () => {
             .research .left_text{
               padding: 0px 50px;
               text-align: center
+            }
+            .overlay{
+              border-top: none
             }
           }
           @media (max-width: 625px) {
