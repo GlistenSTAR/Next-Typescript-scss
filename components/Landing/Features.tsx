@@ -7,7 +7,7 @@ const Features = () => {
         <h6>THE ROAD AHEAD</h6>
         <h1>Future Features</h1>
       </div>
-      <div style={{padding:30}}>
+      <div className="items row">
         <FeatureItem 
           icon="list"
           title="Crypto Indexes"
@@ -41,6 +41,9 @@ const Features = () => {
       </div>
 
       <style jsx>{`
+        .items{
+          padding-top: 20px;
+        }
       `}</style>
     </div>
   );

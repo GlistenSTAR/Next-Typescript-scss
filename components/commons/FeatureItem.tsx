@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const FeatureItem = ({icon, title, content}) => {
   return (
-    <div className="feature_item col-md-4">
+    <div className="feature_item col-md-4 col-sm-6">
       <Image 
         src={ require(`../../assets/img/icons/${icon}.png`) }
         width="120"

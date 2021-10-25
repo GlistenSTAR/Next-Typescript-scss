@@ -1,6 +1,6 @@
 function Card({title, content}) {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 col-sm-12 col-xs-12">
       <div className="card"> 
         <h3>{title}</h3>
         <p>{content}</p>
@@ -50,13 +50,25 @@ function Card({title, content}) {
           .card{
             min-height: 450px
           }
+        }
+        @media (max-width: 990px) {
+          .col-md-4{
+            width: 100%
+          }
+          .card{
+            min-height: 0px;
+            margin: 20px 0;
+          }
+          .card p{
+            max-width: 1000px;
+          }
           .card button{
-            position: absolute;
+            position: relative;
             bottom: 20px;
             width: 180px;
             border-radius: 50px;
             padding: 14px 35px;
-            margin-right:10px
+            margin-right:0px;
             min-height: auto
           }
         }

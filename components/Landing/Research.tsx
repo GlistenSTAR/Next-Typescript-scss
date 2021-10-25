@@ -67,8 +67,6 @@ const Research = () => {
             margin-bottom: auto;
             padding-left: 20px;
           }
-          .research .left_text p{
-          }
           .research p{
             font-size: 17px;
             max-width: 490px
@@ -116,6 +114,39 @@ const Research = () => {
           }
           .learn_more:hover {
             opacity:0;
+          }
+
+          @media (max-width: 992px) {
+            .research{
+              padding-top: 30px
+            }
+            .research .left_text{
+              padding: 0px 200px;
+              text-align: center
+            }
+            .research .left_text p{
+              text-align: center
+            }
+            .research p{
+              font-size: 17px;
+              max-width: 1000px;
+            }
+            .tab_group{
+              text-transform: uppercase;
+              padding-top: 70px
+            }
+          }
+          @media (max-width: 768px) {
+            .research .left_text{
+              padding: 0px 50px;
+              text-align: center
+            }
+          }
+          @media (max-width: 625px) {
+            .research .left_text{
+              padding: 0px 0px;
+              text-align: center
+            }
           }
         `}</style>
       </div>

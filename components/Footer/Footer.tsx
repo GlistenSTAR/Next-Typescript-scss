@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <div className="container footer">
-      <div className="footer_header" style={{display:'flex'}}>
+      <div className="footer_header">
         <div className="col-md-3 col-sm-6 col-12">
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <Image
@@ -91,9 +91,13 @@ const Footer = () => {
           display: flex;
           flex-direction: column;
         }
+        .footer_header{
+          display: flex;
+        }
         .footer_header p{
           font-size: 15px;
           color : #6d859e
+          display:flex;
         }
         .menus h2{
           text-align: center;
@@ -123,6 +127,22 @@ const Footer = () => {
         }
         .round_buttons div{
           padding: 0 7px;
+        }
+        @media (max-width: 768px){
+          .footer .col-md-3{
+            width: 50%;
+            padding: 20px 30px
+          }
+          .footer_header{
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .footer_bottom{
+            flex-direction: column;
+          }
+          .round_buttons{
+            padding-top: 20px
+          }
         }
       `}</style>
     </div>

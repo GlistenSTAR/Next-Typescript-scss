@@ -26,6 +26,19 @@ const Socials = () => {
           margin: 0px 20px;
           padding: 20px
         }
+        
+        @media(max-width: 768px){
+          .socials{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+          }
+          .socials div{
+            float: left;
+            padding: 5px 20px
+          }
+        }
       `}</style>
     </div>
   );

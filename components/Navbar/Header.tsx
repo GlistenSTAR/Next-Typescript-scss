@@ -61,6 +61,11 @@ const Header = () => {
             padding: auto 20px;
           }
         }
+        @media (max-width: 768px) {
+          .nav.navbar-nav, button{
+            display: none
+          }
+        }
       `}</style>
     </>
   );
