@@ -14,7 +14,7 @@ const Join = () => {
 
 
   return (
-      <div className={`container mt-5 ${styles.join_us}`}>
+      <div className={`container mt-5 ${styles.join_us}`} id="contact">
         <div className={`col-md-6 col-sm-6 col-12 ${styles.join_us__content_group}`}>
           <div className="content">
             <h2>Join a community of intelligent investors</h2>
@@ -22,24 +22,34 @@ const Join = () => {
           </div>
           <div className={`${styles.join_us__link_groups}`}>
             <div className={`${styles.join_us__link_icon}`}>
-              <Image src= { require('../../assets/img/icons/twitter.svg')} width="25" height="25"/>
-              <span className="mt-2">Twitter</span>
+              <a href="https://twitter.com/CardanoMaladex" target="_blank">
+                <Image src= { require('../../assets/img/icons/twitter.svg')}/>
+              </a>
+              <span>Twitter</span>
             </div>
             <div className={`${styles.join_us__link_icon}`}>
-              <Image src= { require('../../assets/img/icons/medium.svg')} width="25" height="25"/>
-              <span className="mt-2">Mediumn</span>
+              <a href="https://blog.maladex.com" target="_blank">
+                <Image src= { require('../../assets/img/icons/medium.svg')}/>
+              </a>
+              <span>Medium</span>
             </div>
             <div className={`${styles.join_us__link_icon}`}>
-              <Image src= { require('../../assets/img/icons/reddit.svg')} width="25" height="25"/>
-              <span className="mt-2">Reddit</span>
+              <a href="https://reddit.com/r/maladex" target="_blank">
+                <Image src= { require('../../assets/img/icons/reddit.svg')}/>
+              </a>
+              <span>Reddit</span>
             </div>
             <div className={`${styles.join_us__link_icon}`}>
-              <Image src= { require('../../assets/img/icons/discard.svg')} width="25" height="25"/>
-              <span className="mt-2">Discard</span>
+              <a href="https://bit.ly/maladex-dc" target="_blank">
+                <Image src= { require('../../assets/img/icons/discord.svg')}/>
+              </a>
+              <span>Discord</span>
             </div>
             <div className={`${styles.join_us__link_icon}`}>
-              <Image src= { require('../../assets/img/icons/telegram.svg')} width="25" height="25"/>
-              <span className="mt-2">Telegram</span>
+              <a href="https://t.me/maladex" target="_blank">
+                <Image src= { require('../../assets/img/icons/telegram.svg')}/>
+              </a>
+              <span>Telegram</span>
             </div>
           </div>
         </div>

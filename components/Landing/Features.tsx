@@ -2,7 +2,7 @@ import FeatureItem from '../commons/FeatureItem'
 
 const Features:React.FC = () => {
   return (
-    <div className="container features mt-5">
+    <div className="container features mt-5" id="future">
       <div>
         <h6>THE ROAD AHEAD</h6>
         <h1>Future Features</h1>

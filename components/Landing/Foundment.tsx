@@ -12,7 +12,7 @@ const cards = card_data.data.map((item, key)=>(
 
 const Foundment: React.FC = () => {
   return (
-    <div className="foundment">
+    <div className="fundament" id="fundament">
       <div className="header">
         <h6>THE FUNDAMENTALS</h6>
         <h1>A DEX Built Better</h1>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Logo from '../../Assets/img/logo.png'
+import Logo from '../../assets/img/logo.png'
 import styles from '../../styles/Navbar.module.scss'
 
 const Header:React.FC = () => {
@@ -9,7 +9,7 @@ const Header:React.FC = () => {
       <nav className={`navbar navbar-inverse ${styles.navbar}`}>
         <div className="container">
           <div className="navbar-header">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <Image 
                 src={Logo}
                 alt="Logo"
@@ -24,7 +24,7 @@ const Header:React.FC = () => {
             <li><a href="#">ISPO</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
-          <button className="btn btn-primary navbar-btn">Launch App</button>
+          <button className={styles.navbar_btn}>Launch App</button>
         </div>
       </nav>
     </>

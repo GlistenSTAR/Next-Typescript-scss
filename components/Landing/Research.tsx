@@ -13,8 +13,8 @@ const Research: React.FC = () => {
             <p>A technically superior DEX built by Quants and Haskell natives. <br/>
               Providing advanced trading tools previously only available to the Tradfi elite.</p>
             <div className="button_group">
-              <button className="btn btn-danger">White Paper</button>
-              <button className="btn btn-default">Lite Paper</button>
+              <a href="https://docs.maladex.com/whitepaper.pdf" target="_blank"><button className={styles.research__btn_white_paper}>White Paper</button></a>
+              <button className={styles.research__btn_lite_paper}>Lite Paper</button>
             </div>
           </div>
           <div className={`col-md-6 col-sm-12 col-12 ${styles.research__right_image}`}>
@@ -29,32 +29,32 @@ const Research: React.FC = () => {
           <div className="row text-center">
             <div className={`col-md-4 ${styles.tabgroup__overlay}`}>
               <div className={`position-relative ${styles.tabgroup__relative}`}>
-                <div className={`position-absolute${styles.research_child_overlay}`}>
+                <div className={`position-absolute ${styles.tabgroup__child_overlay}`}>
                   <div className={styles.tabgroup__text}>
                     Learn more
                   </div>
                 </div>
-                <div className={styles.tabgroup__tabtext}>Core ideas</div>
+                <div className={styles.tabgroup__tabtext}><a href="#fundament">CORE IDEARS</a></div>
               </div>
             </div>
             <div className={`col-md-4 ${styles.tabgroup__overlay}`}>
               <div className={`position-relative ${styles.tabgroup__relative}`}>
-                <div className={`position-absolute${styles.research_child_overlay}`}>
+                <div className={`position-absolute${styles.tabgroup__child_overlay}`}>
                   <div className={styles.tabgroup__text}>
                     Learn more
                   </div>
                 </div>
-                <div className={styles.tabgroup__tabtext}>ROAD MAp</div>
+                <div className={styles.tabgroup__tabtext}><a href="#future">ROAD MAP</a></div>
               </div>
             </div>
             <div className={`col-md-4 ${styles.tabgroup__overlay}`}>
               <div className={`position-relative ${styles.tabgroup__relative}`}>
-                <div className={`position-absolute${styles.research_child_overlay}`}>
+                <div className={`position-absolute${styles.tabgroup__child_overlay}`}>
                   <div className={styles.tabgroup__text}>
                     Learn more
                   </div>
                 </div>
-                <div className={styles.tabgroup__tabtext}>JOIN Us</div>
+                <div className={styles.tabgroup__tabtext}><a href="#contact">JOIN US</a></div>
               </div>
             </div>
           </div>
