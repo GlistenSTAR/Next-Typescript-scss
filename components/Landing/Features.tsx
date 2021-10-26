@@ -7,7 +7,7 @@ const Features:React.FC = () => {
         <h6>THE ROAD AHEAD</h6>
         <h1>Future Features</h1>
       </div>
-      <div className="items row">
+      <div className="items row" style={{paddingTop:'20px'}}>
         <FeatureItem 
           icon="list"
           title="Crypto Indexes"
@@ -39,12 +39,6 @@ const Features:React.FC = () => {
           content="A short sentence should go here to explain this specific feature."
         />
       </div>
-
-      <style jsx>{`
-        .items{
-          padding-top: 20px;
-        }
-      `}</style>
     </div>
   );
 }

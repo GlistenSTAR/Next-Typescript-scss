@@ -1,10 +1,11 @@
 import Image from 'next/image'
 
+import styles from '../../styles/Home.module.scss'
 import scientist from '../../assets/img/scientist.png'
 
 const Pool: React.FC = () => {
   return (
-    <div className="pool">
+    <div className={styles.pool}>
       <div className="row" style={{float: 'right'}}>
         <div className="col-md-6 col-sm-12 pool-text">
           <h6>The Mal pool</h6>
@@ -15,7 +16,7 @@ const Pool: React.FC = () => {
             <button className="btn btn-default">Learn more</button>
           </div>
         </div>
-        <div className="col-md-6 col-sm-12 pool-image" style={{display: 'flex', justifyContent: 'space-around'}}>
+        <div className={`col-md-6 col-sm-12 ${styles.pool__image}`} >
           <Image 
             src={scientist}
             width="400"
@@ -23,27 +24,6 @@ const Pool: React.FC = () => {
           />
         </div>
       </div>
-
-      <style jsx>{`
-        .pool{
-          margin-top: 150px;
-        }
-        .pool p{
-          color: #546681;
-          font-size: 17px
-        }
-        @media (max-width: 992px) {
-          .pool .com-md-6.col-sm-12{
-            float: right
-          }
-          .pool-image{
-            order: 2
-          }
-          .pool-text{
-            order:1
-          }
-        }
-      `}</style>
     </div>
   );
 }

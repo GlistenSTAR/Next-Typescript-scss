@@ -17,15 +17,9 @@ const Foundment: React.FC = () => {
         <h6>THE FUNDAMENTALS</h6>
         <h1>A DEX Built Better</h1>
       </div>
-      <div className="row">
+      <div className="row" style={{marginTop:'50px'}}>
         {cards}
       </div>
-
-      <style jsx>{`
-        .row{
-          margin-top: 50px
-        }
-      `}</style>
     </div>
   );
 }
