@@ -1,4 +1,4 @@
-const withSass = require('@zeit/next-sass');
+import withSass from '@zeit/next-sass';
 
 const config = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
