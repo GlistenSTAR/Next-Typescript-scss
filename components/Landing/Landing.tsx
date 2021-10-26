@@ -17,7 +17,7 @@ const Landing: React.FC = () => {
         <Socials />
         <Features />
         <Join />
-      </div>  
+      </div> 
     </>
   );
 }

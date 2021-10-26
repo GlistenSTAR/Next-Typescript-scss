@@ -1,7 +1,30 @@
 import Image from 'next/image'
 import styles from './Footer.module.scss';
+import { useState, useEffect } from 'react';
 
 const Footer: React.FC = () => {
+  const [show, setShow] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+
+    if (position > 20) {
+      setShow(1);
+    } else {
+      setShow(0);
+    }
+  };
+
+  const goToTop = () =>{
+    
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className={`container ${styles.footer}`}>
       <div className={styles.footer__header}>
@@ -64,6 +87,8 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </div>
+
+      {show ? (<a className={styles.backtotop} href="#header"></a> ):''}
     </div>
   );
 }

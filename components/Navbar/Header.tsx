@@ -6,7 +6,7 @@ import styles from '../../styles/Navbar.module.scss'
 const Header:React.FC = () => {
   return (
     <>
-      <nav className={`navbar navbar-inverse ${styles.navbar}`}>
+      <nav className={`navbar navbar-inverse ${styles.navbar}`} id="header">
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">

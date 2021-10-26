@@ -75,3 +75,14 @@
     }
   }
 }
+
+.backtotop{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: url('../../assets//img//icons/backtotop.png');
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  z-index: 999999;
+}
