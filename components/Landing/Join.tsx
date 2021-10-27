@@ -56,8 +56,9 @@ const Join = () => {
         <div className={`col-md-6 col-sm-6 col-12 ${styles.join_us__large_image}`}>
           <Image 
             src={samurai}
-            width={ width !=null || width > 768 ? width : '440'} 
-            height={ width !=null || width > 768 ? width : '440'}  
+            //  
+            width={ '378'} 
+            height={ '420'}  
           />
         </div>
     </div>
