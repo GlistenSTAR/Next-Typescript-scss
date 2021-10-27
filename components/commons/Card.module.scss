@@ -13,6 +13,7 @@
   justify-content: space-between;
   align-items: flex-start;
   border-radius: 15px;
+  transition: ease-in-out 0.3s;
   &:hover {
     margin-top: -10px;
     transition: ease-in-out 0.3s;

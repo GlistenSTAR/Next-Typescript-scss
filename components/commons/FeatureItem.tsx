@@ -12,8 +12,8 @@ const FeatureItem: React.FC<Props> = ({icon, title, content}) => {
     <div className="feature_item col-md-4 col-sm-6">
       <Image 
         src={ require(`../../assets/img/icons/${icon}.png`) }
-        width="120"
-        height="120"
+        width={120}
+        height={120}
       />
       <div>
         <div>
@@ -30,7 +30,7 @@ const FeatureItem: React.FC<Props> = ({icon, title, content}) => {
           display: flex;
           flex-direction: row;
           align-items: center;
-          padding: 20px 15px;
+          padding: 15px 10px;
           float:left
         }
         .feature_item h3{
