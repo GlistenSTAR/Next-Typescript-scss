@@ -26,25 +26,27 @@ const Header:React.FC = () => {
             </li>
             <div className={styles.navbar__dropdown}>
               <button className="dropbtn">
-                <FontAwesomeIcon icon={faAngleDown} className="mr-2"/>
+                <FontAwesomeIcon icon={faAngleDown}/>
                 Info 
               </button>
               <div className="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Partners</a>
+                <a href="#">Features</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Tokenomics</a>
+                <a href="#">FAQ</a>
               </div>
             </div> 
 
             <div className={styles.navbar__dropdown}>
               <button className="dropbtn">
-                <FontAwesomeIcon icon={faAngleDown} className="mr-2"/>
+                <FontAwesomeIcon icon={faAngleDown}/>
                 Pool 
               </button>
               <div className="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Pools</a>
+                <a href="#">Rewards</a>
+                <a href="#">Formula</a>
               </div>
             </div> 
             <li className="nav-item">

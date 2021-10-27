@@ -63,7 +63,7 @@
       font-family: inherit;
       margin: 0;
       svg{
-        margin-right: 5px;
+        margin-right: 7px;
       }
     }
     div {
@@ -82,7 +82,8 @@
         text-align: left;
       }
       a:hover {
-        background-color: rgb(167, 82, 82);
+        background-color: #E20100;
+        color: white;
       }
     }
     &:hover div {

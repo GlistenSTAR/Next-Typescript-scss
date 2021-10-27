@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.scss'
 
 import Red_orgo from '../../assets/img/red_orgo.png'
+import handle from '../../assets/img/adahandle.png'
 
 const Research: React.FC = () => {
   return (
@@ -25,6 +26,16 @@ const Research: React.FC = () => {
             />
           </div>
         </div>
+
+        <div className="handle mt-5 text-center">
+          <h2 className="display-2 text-center mb-3" style={{fontSize:'2.75rem'}}>Partners</h2>
+          <a href="https://adahandle.com/">
+            <Image 
+              src={handle}
+            />
+          </a>
+        </div>
+
         <div className={styles.tabgroup}>
           <div className="row text-center">
             <div className={`col-md-4 ${styles.tabgroup__overlay}`}>
