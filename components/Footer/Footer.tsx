@@ -14,10 +14,6 @@ const Footer: React.FC = () => {
     }
   };
 
-  const goToTop = () =>{
-    
-  }
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
