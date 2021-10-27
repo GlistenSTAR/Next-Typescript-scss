@@ -1,4 +1,4 @@
-import Foundment from './Foundment'
+import Fundarment from './Fundament'
 import Research from './Research'
 import Pool from './Pool'
 import Socials from './Socials'
@@ -10,7 +10,7 @@ const Landing: React.FC = () => {
     <>
       <div className="container">
         <Research />
-        <Foundment />
+        <Fundarment />
         <Pool />
       </div>
       <div className="container_fluid"> 

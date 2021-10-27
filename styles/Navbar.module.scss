@@ -93,4 +93,21 @@
       display: none;
     }
   }
+
+  &__toogle{
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      border-radius: 4px;
+      color: #E20100;
+      border: 1px solid #E20100;
+      padding:7px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__toogle:hover{
+    color: white;
+    background-color: #E20100;
+  }
 }

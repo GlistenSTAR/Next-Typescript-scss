@@ -10,7 +10,7 @@ const cards = card_data.data.map((item, key)=>(
   />
 ));
 
-const Foundment: React.FC = () => {
+const Fundarment: React.FC = () => {
   return (
     <div className="fundament" id="fundament">
       <div className="header">
@@ -25,4 +25,4 @@ const Foundment: React.FC = () => {
 }
 
 
-export default Foundment;
+export default Fundarment;

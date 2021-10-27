@@ -62,3 +62,10 @@ h6 {
     width: 100%;
   }
 }
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open{
+  background-color: transparent!important;
+}
+.ReactModalPortal{
+  background-color: #fbfbfc;
+}
